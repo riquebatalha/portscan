@@ -10,5 +10,5 @@ for port in ports:
     if code == 0:
         print("Porta {} OPEN   | CODE: {}".format(port, code))
     else:
-        print("Porta {} CLOSE  | CODE: {}".format(port, code))
+        print("Porta {} CLOSED  | CODE: {}".format(port, code))
 print("Created by riquebatalha")
