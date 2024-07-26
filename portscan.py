@@ -5,7 +5,7 @@ print("--------\PORT SCAN/--------")
 for port in ports:
     client  = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     client.settimeout(0.5)
-    code = client.connect_ex(("baconcn.com", port))
+    code = client.connect_ex(("alvo que deseja analisar (IP | DNS", port))
     # CODE 0 SIGNIFICA QUE ESTÁ ABERTA, CASO CONTRÁRIO, ESTÁ FECHADA.
     if code == 0:
         print("Porta {} OPEN   | CODE: {}".format(port, code))
